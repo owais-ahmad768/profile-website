@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owais Ahmad | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#111827;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h3{
+    font-size:22px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#d1d5db;
+    line-height:28px;
+    max-width:600px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    margin-top:20px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:scale(1.05);
+}
+
+.hero-img{
+    flex:1;
+    text-align:center;
+}
+
+.hero-img img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+    object-fit:cover;
+}
+
+section{
+    padding:90px 8%;
+}
+
+h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#38bdf8;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:32px;
+    color:#d1d5db;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.skill:hover{
+    background:#38bdf8;
+    transform:translateY(-8px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-10px);
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px;
+    color:#d1d5db;
+}
+
+footer{
+    background:#111827;
+    padding:20px;
+    text-align:center;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.hero-img img{
+    width:220px;
+    height:220px;
+    margin-bottom:40px;
+}
+
+nav{
+    display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">Portfolio</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+<h3>Hello, I'm</h3>
+
+<h1><span>Owais Ahmad</span></h1>
+
+<h3>Data Analyst | BCA Graduate</h3>
+
+<p>
+I am passionate about Data Analytics and Web Development.
+I enjoy building responsive websites and creating dashboards
+using Excel, SQL, Python, Power BI and modern web technologies.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+<div class="hero-img">
+<img src="https://via.placeholder.com/320" alt="Profile">
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+<p>
+I am a BCA graduate interested in Data Analytics, Business Intelligence,
+Python, SQL, Excel, Power BI, HTML, CSS, JavaScript, Node.js and MongoDB.
+My goal is to solve real-world problems using technology and data.
+</p>
+</div>
+
+</section>
+
+<section>
+
+<h2 id="skills">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">SQL</div>
+<div class="skill">Excel</div>
+<div class="skill">Power BI</div>
+<div class="skill">MongoDB</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 id="projects">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Hospital Finder</h3>
+<p>
+A full-stack hospital search website built using HTML, CSS,
+JavaScript, Node.js and MongoDB.
+</p>
+</div>
+
+<div class="project">
+<h3>Sales Dashboard</h3>
+<p>
+Interactive Power BI dashboard for business insights and visualization.
+</p>
+</div>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>
+Responsive personal portfolio developed using HTML and CSS.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>📧 Email: owais@example.com</p>
+
+<p>📱 Phone: +91 9876543210</p>
+
+<p>📍 Amravati, Maharashtra, India</p>
+
+<a href="#" class="btn">Download Resume</a>
+
+</section>
+
+<footer>
+
+© 2026 Owais Ahmad | All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
