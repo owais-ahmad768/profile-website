@@ -100,17 +100,26 @@ nav a:hover{
 
 .hero-img{
     flex:1;
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .hero-img img{
-    width:320px;
-    height:320px;
+    width:350px;
+    height:350px;
     border-radius:50%;
-    border:6px solid #38bdf8;
     object-fit:cover;
+    object-position:center top; /* Adjust face position */
+    border:6px solid #38bdf8;
+    box-shadow:0 0 25px rgba(56,189,248,0.6);
+    transition:0.4s ease;
 }
 
+.hero-img img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 35px rgba(56,189,248,0.9);
+}
 section{
     padding:90px 8%;
 }
@@ -210,6 +219,7 @@ nav{
 }
 
 }
+
 </style>
 
 </head>
@@ -249,7 +259,7 @@ using Excel, SQL, Python, Power BI and modern web technologies.
 </div>
 
 <div class="hero-img">
-<img src="image/owais image.jpeg" alt="Profile">
+<img src="image/owais image.jpeg" alt="Profile  ">
 </div>
 
 </section>
